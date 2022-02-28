@@ -3,25 +3,19 @@ API for display related behaviour.
 '''
 
 # Imports
-from pprint import pprint
+from choice_API import choice_type
 
 # Data
-input_type = {
-  "yes" : 'Y',
-  "no" : 'N',
-}
-
 display = {
   "welcome_message" : "Hello, are you ready for a maths quiz?",
-  "yes_or_no": f"Yes = {input_type['yes']} \n No = {input_type['no']}'"
+  "goodbye_message": "Goodbye, see you next time!",
+  "yes_or_no": f"Yes = {choice_type['YES']} No = {choice_type['NO']}  >>> ",
+  "yes_to_continue": f"Enter {choice_type['YES']} to continue...  >>> "
 }
 
 # Behaviour
-print(display["welcome_message"])
+welcome_user = lambda: print(display["welcome_message"])
 
-app_start_request = input(f"Start quiz?\n{display['yes_or_no']}\n")
+farewell_user = lambda: print(display["goodbye_message"])
 
-app_inactive = lambda app_start_request : app_start_request != display["input_yes"]
-
-if app_inactive:
-  quit()
+request_app_start = lambda: input(display['yes_to_continue'])
