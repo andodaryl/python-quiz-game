@@ -9,8 +9,8 @@ from choice_API import choice_type
 display = {
   "welcome_message" : "Hello, are you ready for a maths quiz?",
   "goodbye_message": "Goodbye, see you next time!",
-  "yes_or_no": f"Yes = {choice_type['YES']} No = {choice_type['NO']}  >>> ",
-  "yes_to_continue": f"Enter {choice_type['YES']} to continue...  >>> "
+  "yes_or_no": f"Yes = {choice_type['YES']} No = {choice_type['NO']} >>> ",
+  "yes_to_continue": f"Enter '{choice_type['YES']}' to continue >>> "
 }
 
 # Behaviour
