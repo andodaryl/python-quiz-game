@@ -5,6 +5,8 @@ Module for question generator and related behaviour.
 from random import randint
 
 # Behaviour
+max_questions = 10
+
 get_random_number = lambda: (randint(-1000, 1000))
 question_type = (
   lambda a=get_random_number(), b=get_random_number(): (f"{a} + {b} = ", a + b), # add
@@ -15,4 +17,4 @@ question_type = (
 get_random_question = lambda: question_type[randint(0, len(question_type) - 1)]
 generate_question = lambda get_generator=get_random_question(): get_generator()
 
-get_questions = lambda total=10: tuple([generate_question() for question_number in range(total)])
+get_questions = lambda total=max_questions: tuple([generate_question() for question_number in range(total)])
