@@ -18,3 +18,5 @@ get_random_question = lambda: question_type[randint(0, len(question_type) - 1)]
 generate_question = lambda get_generator=get_random_question(): get_generator()
 
 get_questions = lambda total=max_questions: tuple([generate_question() for question_number in range(total)])
+
+is_answer_correct = lambda user_answer=None, correct_answer=None: user_answer == correct_answer if type(user_answer) is int else False
