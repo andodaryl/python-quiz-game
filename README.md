@@ -27,3 +27,9 @@ Stage 3
 * User system
 * Pause session
 * Database system
+
+## Resources
+
+References to materials used in development including tutorials.
+
+[Basic project ideas for Python](https://www.youtube.com/watch?v=DLn3jOsNRVE)
