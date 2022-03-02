@@ -11,12 +11,13 @@ Showcase python basics via simple code logic.
 ## Project Milestones
 Development will progress through each stage and may terminate early.
 
+Project Dormant, MVP Complete.
 
 Stage 1
-* Basic user input system
-* Basic display system
-* Basic question generator
-* Points system
+* Basic user input system [ Complete ]
+* Basic display system [ Complete ]
+* Basic question generator [ Complete ]
+* Basic Points system [ Complete ]
 
 Stage 2
 * Rounds system
@@ -33,3 +34,4 @@ Stage 3
 References to materials used in development including tutorials.
 
 [Basic project ideas for Python](https://www.youtube.com/watch?v=DLn3jOsNRVE)
+[Random module API for Python](https://docs.python.org/3/library/random.html)
