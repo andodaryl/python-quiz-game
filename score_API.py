@@ -11,7 +11,7 @@ max_reward = max_questions * reward_per_question
 current_score = 0
 
 # Behaviour
-show_points = lambda: current_score
+show_score = lambda: current_score
 
 calculate_reward = lambda weight=1: reward_per_question * weight
 
